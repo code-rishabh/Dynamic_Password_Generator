@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
+import Logo from "./Logo";
 
 const PasswordGenerator = () => {
   const [length, setLength] = useState(8);
@@ -39,6 +40,7 @@ const PasswordGenerator = () => {
 
   return (
     <div className="container min-h-screen flex flex-col justify-center items-center text-xl bg-neutral-900 px-4 py-12 text-neutral-100">
+      <Logo />
       <h1 className="font-bold">Complex Password Generator</h1>
       <div className="container max-w-md mx-auto shadow-md rounded-lg p-5 my-8 text-orange-500 bg-neutral-800 border border-neutral-700">
         <div className="flex shadow rounded-xl overflow-hidden my-5">
@@ -98,5 +100,6 @@ const PasswordGenerator = () => {
     </div>
   );
 };
+
 
 export default PasswordGenerator;
